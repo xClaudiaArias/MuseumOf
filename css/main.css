@@ -17,6 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  background-color: #fff;
 }
 nav h1 {
   font-family: Georgia;
@@ -64,31 +65,63 @@ nav #nav-cont #nav-btn {
 
 main {
   background-color: #FAFAFA;
-  width: 100%;
-  display: grid;
+}
+main #featured {
+  font-weight: 100;
+  padding: 40px 0 0 40px;
+}
+main #img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-  grid-auto-rows: auto;
-}
-main .card {
-  grid-template-rows: max-content;
-  height: min-content;
-  border: orange dashed 2px;
-}
-main .card .wrapper {
   border: 2px solid red;
+  padding: 0 40px;
 }
-main .card .wrapper img {
-  width: 100%;
+main #img-container span .wrapper img {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border: blue 2px solid;
-  vertical-align: middle;
 }
-main .card .info-container {
-  position: absolute;
-  border: green dashed 2px;
-  z-index: 2;
-  top: 0;
+main #img-container span .info-container p {
+  width: 300px;
+}
+
+footer {
+  width: 100vw;
+  height: 54px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 100;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+footer .socials .icons {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-contact {
+  background-color: #FAFAFA;
+}
+#main-contact #contact-container #pictures img {
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
